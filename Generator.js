@@ -15,7 +15,7 @@ function generateId() {
     const logoutButton = document.querySelector("#logout-btn");
     
     logoutButton.addEventListener("click", function () {
-    window.location.href = "Login.html";
+    window.location.href = "Index.html";
     }); //Currently Logout only redirects to the LoginPage, when it will be connected with backend it can be modified for handling Logout operation
 
     // Handle form submission
