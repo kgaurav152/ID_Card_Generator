@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+/* Styles for Form Section */
+
+#form-section {
+    margin-right: 20px;
+}
+
+#form-section h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input,
+#font {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#options-container {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+
+#options-container label {
+    display: block;
+    font-weight: bold;
+}
+
+#options-container input,
+#options-container select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#options-container button {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styles for Preview Section */
+
+#preview-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preview-section h2 {
+    margin-top: 0;
+}
+
+#preview-container {
+    height: 45%;
+    width: 50%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: auto;
+    padding: 2%;
+    justify-content: space-between;
+}
+
+#logo-container img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+#logo-container p {
+    font-weight: bold;
+    font-size: large;
+}
+
+#photo-container {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+#photo-container img {
+    align-items: center;
+    max-width: 100%;
+    max-height: auto;
+}
+
+#info-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+#name-container,
+#roll-no-container,
+#blood-group-container,
+#institution-container {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+#download-btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#download-btn-container button {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}

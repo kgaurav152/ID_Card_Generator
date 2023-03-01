@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="Generator.css">
+</head>
+
+<body>
+    <header>
+        <h1>ID Card Generator</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Enter ID Card Information</h2>
+            <form id="id-card-form">
+                <div class="form-group">
+                    <label for="photo-file">Photo</label>
+                    <input type="file" id="photo-file" name="photo-file" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="roll-no">Roll No.</label>
+                    <input type="text" id="roll-no" name="roll-no">
+                </div>
+                <div class="form-group">
+                    <label for="blood-group">Blood Group</label>
+                    <input type="text" id="blood-group" name="blood-group" required>
+                </div>
+                <div class="form-group">
+                    <label for="institution">Institution</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+                <div class="form-group">
+                    <label for="font">Font</label>
+                    <select id="font" name="font">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+                </div>
+                <button type="submit">Generate ID Card</button>
+            </form>
+            <div id="options-container">
+                <div class="form-group">
+                    <label for="logo-file">Logo</label><br />
+                    <input type="file" id="logo-file" name="logo-file" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="event-name">Event Name</label><br />
+                    <input type="text" id="event-name" name="event-name" value="TECHNoRiTi,2023" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="font-color">Font Color</label><br />
+                    <input type="color" id="font-color" name="font-color" value="#000000" required>
+                </div>
+                <button id="regenerate-btn">Regenerate ID Card</button>
+            </div>
+
+        </section>
+        <section id="preview-section">
+            <h2 id="preview-header">Preview</h2>
+            <div id="preview-container">
+                <div id="logo-container">
+                    <img id="logo" src="default-logo.png" alt="Default Logo">
+                    <p id="logo-text">TECHNoRiTi,2023</p>
+                </div>
+                <div id="info-container">
+                    <div id="photo-container">
+                        <img id="photo" src="default-photo.png" alt="Default Photo">
+                    </div>
+                    <div id="unique-id-container"></div>
+                    <div id="name-container"></div>
+                    <div id="roll-no-container"></div>
+                    <div id="blood-group-container"></div>
+                    <div id="institution-container"></div>
+                </div>
+            </div>
+            <div id="download-btn-container">
+                <button id="print-btn">Download ID Card</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="Generator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</body>
+
+</html>
