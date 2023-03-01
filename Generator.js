@@ -110,6 +110,8 @@ function generateId() {
     printButton.addEventListener("click", function (event) {
     event.preventDefault();
     
+    document.body.style.backgroundImage = "none";
+    document.body.style.backgroundColor = "#f3f3f3";
     document.getElementById("preview-header").style.display = "none";
     document.getElementById("download-btn-container").style.display = "none";
 
